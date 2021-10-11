@@ -1,0 +1,23 @@
+public class Main {
+
+    public static void main(String[] args) {
+	// create Hashmap for 5 emails & passwords
+  //take input & return value if the email exists
+
+
+        HashMap<String, String> users= new HashMap<String, String>();
+        users.put("A@gmail.com","1234");
+        users.put("B@gmail.com","2345");
+        users.put("C@gmail.com","3456");
+        users.put("D@gmail.com","4567");
+        users.put("E@gmail.com","5678");
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter email:");
+        String email = s.next();
+
+        System.out.println(users.get(email));
+
+
+    }
+}
