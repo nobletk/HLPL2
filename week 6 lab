@@ -1,0 +1,79 @@
+package com.company;
+
+import javax.swing.plaf.synth.SynthTextAreaUI;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+//        Scanner reader = null;
+//        try{
+//            File file= new File("m.txt");
+//            reader = new Scanner(file);
+//            while(reader.hasNext()){
+//                int n = reader.nextInt();
+//                System.out.println(n*n);
+//            }
+//
+//
+//        }
+//        catch(FileNotFoundException e) {
+//            System.out.println("File unavailable");
+//        }
+//        catch(InputMismatchException e){
+//            System.out.println("The input must be a number");
+//        }
+//        finally {
+//            if(reader!=null){
+//                reader.close();
+//            }
+//        }
+//    }
+//        String password ="000";
+//        try {
+//                if(password.length()< 4){
+//                    throw new Exception(password);
+//                }
+//
+//            }
+//        catch(Exception e){
+//            System.out.println("Password too short");
+//        }
+//        String password ="000";
+//        try {
+//            if(password.length()< 4){
+//                throw new Exception(password);
+//            }
+//
+//        }
+//        catch(Exception e){
+//            System.out.println(" Password: "+ e.getMessage() +" is too short");
+//        }
+
+        //int x = 10;
+        // int y read from scanner
+        //Scanner sc= new Scanner(System.in);
+        //y=sc.next(int);
+        //System.out.println(x/y)
+
+
+        int x = 10;
+        int y;
+        try {
+
+            Scanner sc= new Scanner(System.in);
+            y = sc.nextInt();
+            System.out.println(x / y);
+        }
+        catch(Exception e) {
+            System.out.println("not divisible");
+        }
+
+
+    }
+
+}
