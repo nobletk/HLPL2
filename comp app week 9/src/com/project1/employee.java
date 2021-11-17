@@ -8,4 +8,5 @@ public class employee extends person{
 
     ArrayList<employee> emp_list = new ArrayList<employee>();
     ArrayList<customer> cus_list = new ArrayList<customer>();
+//create print function to print cus list
 }
