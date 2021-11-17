@@ -85,5 +85,9 @@ public class Main {
 
 
     }
-    
+    public static void search(){
+            Scanner s = new Scanner(System.in);
+            System.out.println("Type name:");
+            String n = s.next();
+        }
 }
