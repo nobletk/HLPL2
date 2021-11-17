@@ -1,11 +1,15 @@
 package com.project1;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        ArrayList<customer> allCustomer = new ArrayList<customer>();
+        ArrayList<employee> allEmp = new ArrayList<employee>();
+
         customer c1 = new customer();
         c1.Id= 98756;
         c1.name= "James Smith";
@@ -82,12 +86,28 @@ public class Main {
         e4.emp_list.add(e2);
         e4.emp_list.add(e3);
 
+        allEmp.add(e1);
+        allEmp.add(e2);
+        allEmp.add(e3);
+        allEmp.add(e4);
+
+        allCustomer.add(c1);
+        allCustomer.add(c2);
+        allCustomer.add(c3);
+        allCustomer.add(c4);
+        allCustomer.add(c5);
 
 
     }
-    public static void search(){
-            Scanner s = new Scanner(System.in);
-            System.out.println("Type name:");
-            String n = s.next();
-        }
+    public static void search( ArrayList<employee> L){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Type name:");
+        String n = s.next();
+for(int i=0;i<L.size();i++)
+{
+    if(L.get(i).name== n)
+    {
+
+    }
+    }
 }
