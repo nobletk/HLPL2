@@ -6,6 +6,10 @@ public class C1 extends IK{
 
     @Override
     public void Display() {
-        System.out.println();
+        System.out.println("ModelName:"+modelName);
+        System.out.println("EngineSize:"+engineSize);
+        System.out.println("Color:"+color);
+        System.out.println("Wheel:"+wheel);
+        System.out.println("ABS:"+ABS);
     }
 }
