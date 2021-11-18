@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        ArrayList<customer> allCustomer = new ArrayList<customer>();
+        ArrayList<customer> allCus = new ArrayList<customer>();
         ArrayList<employee> allEmp = new ArrayList<employee>();
 
         customer c1 = new customer();
