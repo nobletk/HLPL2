@@ -69,7 +69,7 @@ public class Main {
 
         employee e3 = new employee();
         e3.Id= 1089;
-        e3.name="John Walter";
+        e3.name="Jim Alex";
         e3.age=38;
         e3.address="MainLand";
         e3.position="Employee";
@@ -106,13 +106,14 @@ public class Main {
         public static void search(ArrayList<employee>L){
             Scanner s = new Scanner(System.in);
             System.out.println("Type name:");
-            String n = s.next();
+            String n = s.nextLine();
 
-            for(int i=0;i<L.size();i++){
-                if(L.get(i).name.equalsIgnoreCase(n)){
-                    System.out.println(customer.class);
-                }
+            for(int i=0;i<L.size();i++) {
+                if(L.get(i).name.equalsIgnoreCase(n))
+                    System.out.println(L.get(i));
             }
+
+
         }
 
 }
