@@ -8,5 +8,10 @@ public class employee extends person{
 
     ArrayList<employee> emp_list = new ArrayList<employee>();
     ArrayList<customer> cus_list = new ArrayList<customer>();
-//create print function to print cus list
+
+    @Override
+    public  String toString(){
+        return "Name:"+ name + ", ID:"+ Id + " ,Age:" + age + ", Address:" + address +", Salary:"+ salary +
+                ", Position:" + position + ", Cus_list:" + cus_list;
+    }
 }
