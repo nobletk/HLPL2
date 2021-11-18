@@ -6,9 +6,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        ArrayList<customer> allCus = new ArrayList<customer>();
-        ArrayList<employee> allEmp = new ArrayList<employee>();
+
+        ArrayList<customer> allCus= new ArrayList<customer>();
+        ArrayList<employee> allEmp= new ArrayList<employee>();
+
 
         customer c1 = new customer();
         c1.Id= 98756;
@@ -21,7 +22,7 @@ public class Main {
         c2.Id= 4564654;
         c2.name= "Jim Harry";
         c2.age= 30;
-        c2.address= "Main STreet";
+        c2.address= "Main Street";
         c2.account_id= "5564";
 
         customer c3 = new customer();
@@ -47,7 +48,7 @@ public class Main {
 
         employee e1 = new employee();
         e1.Id= 1152;
-        e1.name="John";
+        e1.name="John Walter";
         e1.age=35;
         e1.address="Main ST";
         e1.position="Employee";
@@ -91,23 +92,27 @@ public class Main {
         allEmp.add(e3);
         allEmp.add(e4);
 
-        allCustomer.add(c1);
-        allCustomer.add(c2);
-        allCustomer.add(c3);
-        allCustomer.add(c4);
-        allCustomer.add(c5);
+        allCus.add(c1);
+        allCus.add(c2);
+        allCus.add(c3);
+        allCus.add(c4);
+        allCus.add(c5);
 
-
-    }
-    public static void search( ArrayList<employee> L){
-        Scanner s = new Scanner(System.in);
-        System.out.println("Type name:");
-        String n = s.next();
-for(int i=0;i<L.size();i++)
-{
-    if(L.get(i).name== n)
-    {
+        search(allEmp);
 
     }
-    }
+
+
+        public static void search(ArrayList<employee>L){
+            Scanner s = new Scanner(System.in);
+            System.out.println("Type name:");
+            String n = s.next();
+
+            for(int i=0;i<L.size();i++){
+                if(L.get(i).name.equalsIgnoreCase(n)){
+                    System.out.println(customer.class);
+                }
+            }
+        }
+
 }
