@@ -20,7 +20,7 @@ public class Main {
 
         Scanner MyIK=new Scanner(System.in);
         System.out.println("Ik model:");
-        String n= MyIK.next();
+        String n= MyIK.nextLine();
 
 
         if(n.equalsIgnoreCase(c1.modelName)) {
