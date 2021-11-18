@@ -3,7 +3,7 @@ package com.project1;
 public class Main {
 
     public static void main(String[] args) {
-	 C1 c1= new C1();
+	C1 c1= new C1();
         c1.modelName="C1";
         c1.engineSize="123";
         c1.color="Black";
