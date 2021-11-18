@@ -11,7 +11,10 @@ public class employee extends person{
 
     @Override
     public  String toString(){
-        return "Name:"+ name + ", ID:"+ Id + " ,Age:" + age + ", Address:" + address +", Salary:"+ salary +
-                ", Position:" + position + ", Cus_list:" + cus_list;
+       return "Name:"+ name + "\nID:"+ Id + " \nAge:" + age + "\nAddress:" + address
+                +"\nSalary:"+ salary +
+                "\nPosition:" + position +
+                "\nCus_list:" + cus_list +
+                "\nEmp_list" + emp_list;
     }
 }
