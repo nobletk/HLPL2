@@ -26,28 +26,12 @@ public class Main {
         c7.name="Raul"; c7.Id="778";
         c8.name="Mick"; c8.Id="156";
         c9.name="Suzie"; c9.Id="398";
-
-        ArrayList<customer> L= new ArrayList<customer>();
-
-
-        L.add(c1);
-        L.add(c2);
-        L.add(c3);
-        L.add(c4);
-        L.add(c5);
-        L.add(c6);
-        L.add(c7);
-        L.add(c8);
-        L.add(c9);
-
-        Queue(L);
-
-    }
-    public static void Queue(ArrayList<customer>L){
-        Random visits= new Random();
-
-//        for(int i=0;i<L.size();i++)
-//            System.out.println(L.get(i));
-
+	
+	ArrayList cus = new ArrayList();
+        Random rand = new Random();
+        for(int i=0; i < 20; i++){
+            cus.add(rand.nextInt(1,10));
+        
+    	}
     }
 }
