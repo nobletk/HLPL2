@@ -57,7 +57,7 @@ public class Main {
         //int x = 10;
         // int y read from scanner
         //Scanner sc= new Scanner(System.in);
-        //y=sc.next(int);
+        //y=sc.nextInt();
         //System.out.println(x/y)
 
 
