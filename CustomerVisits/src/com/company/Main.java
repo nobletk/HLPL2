@@ -1,12 +1,10 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
         customer c1 = new customer();
         customer c2 = new customer();
         customer c3 = new customer();
@@ -17,21 +15,51 @@ public class Main {
         customer c8 = new customer();
         customer c9 = new customer();
 
-        c1.name="Mike"; c1.Id="123";
-        c2.name="Alex"; c2.Id="234";
-        c3.name="Paul"; c3.Id="556";
-        c4.name="Jim"; c4.Id="662";
-        c5.name="Tim"; c5.Id="138";
-        c6.name="Derek"; c6.Id="809";
-        c7.name="Raul"; c7.Id="778";
-        c8.name="Mick"; c8.Id="156";
-        c9.name="Suzie"; c9.Id="398";
-	
-	ArrayList cus = new ArrayList();
-        Random rand = new Random();
-        for(int i=0; i < 20; i++){
-            cus.add(rand.nextInt(1,10));
-        
-    	}
+        c1.name = "Ahmed";
+        c1.Id = 1;
+        c2.name = "Alex";
+        c2.Id = 2;
+        c3.name = "Mustafa";
+        c3.Id = 3;
+        c4.name = "Jim";
+        c4.Id = 4;
+        c5.name = "li";
+        c5.Id = 5;
+        c6.name = "Omar";
+        c6.Id = 6;
+        c7.name = "Raul";
+        c7.Id = 7;
+        c8.name = "Ali";
+        c8.Id = 8;
+        c9.name = "Suzie";
+        c9.Id = 9;
+
+
+        ArrayList<customer> cus = new ArrayList<>();
+        cus.add(c1);
+        cus.add(c2);
+        cus.add(c3);
+        cus.add(c4);
+        cus.add(c5);
+        cus.add(c6);
+        cus.add(c7);
+        cus.add(c8);
+        cus.add(c9);
+
+        ArrayList<customer>visits = new ArrayList<>();
+
+        for(int i=0; i < 100; i++){
+            Random rand = new Random();
+            int pickCus = rand.nextInt(0,9);
+            visits.add(cus.get(pickCus));
+            }
+        HashMap<customer,Integer> occur= new HashMap<>();
+        for(customer i:visits){
+            Integer j=occur.get(i);
+            occur.put(i,(j == null)?1:j+1);
+             }
+
+        occur.forEach((key, value) -> System.out.println(key + " " + "visits" + " " + value));
+
+        }
     }
-}
